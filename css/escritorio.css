@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7e7d8cb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- MENÚ SUPERIOR DORADO --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2ab45;
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+}
+
+.logo-web {
+    height: 70px;
+    width: auto;
+}
+
+.enlaces-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.enlaces-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 18px; /* Bajado a un tamaño ideal para que no tape el logo */
+    transition: color 0.3s;
+}
+
+.enlaces-menu a:hover {
+    color: #1a1a1a; /* Cambia a negro cuando pasas el mouse por encima */
+}
+
+/* --- CUERPO Y BIENVENIDA --- */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI';
+}
+
+.bienvenida h2 {
+    color: #1a1a1a;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI';
+}
+
+.bienvenida p {
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-family:Cambria;
+}
+
+/* --- SECCIÓN DE PRODUCTOS --- */
+.seccion-ropa h3 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(201,89,83);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.galeria-grid {
+    display: flex;
+    flex-direction:row;/* Forzamos a que se queden en una sola fila */
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top:25px;
+    
+}
+
+.tarjeta-prenda {
+    flex: 1 1 300px;
+    max-width: 340px;
+    background-color: rgb(158, 152, 152);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-prenda img {
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    object-position:center ;
+}
+
+.tarjeta-prenda h4 {
+    color: #333333;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding: 40px 0;
+}
