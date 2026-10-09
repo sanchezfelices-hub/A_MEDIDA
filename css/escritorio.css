@@ -64,6 +64,7 @@ nav {
     line-height: 1.7;
     margin-bottom: 40px;
     font-family:Cambria;
+    font-size: 24px;
 }
 
 /* --- SECCIÓN DE PRODUCTOS --- */
@@ -91,14 +92,14 @@ nav {
 }
 
 .tarjeta-prenda {
-    flex: 1 1 300px;
-    max-width: 340px;
+   
     background-color: rgb(158, 152, 152);
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     text-align: center;
     padding-bottom: 15px;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .tarjeta-prenda img {
